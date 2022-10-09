@@ -11,19 +11,19 @@ import UIKit
 typealias ContainerCompletion = () -> Void
 
 public enum ContainerMoveType {
-    case top
-    case middle
-    case bottom
-    case hide
-    case custom
+  case top
+  case middle
+  case bottom
+  case hide
+  case custom
 }
 
 public enum ContainerFromType {
-    case pan
-    case scroll
-    case scrollBorder
-    case rotation
-    case tracking
-    case custom
+  case pan
+  case scroll
+  case scrollBorder
+  case rotation
+  case tracking
+  case custom
 }
 

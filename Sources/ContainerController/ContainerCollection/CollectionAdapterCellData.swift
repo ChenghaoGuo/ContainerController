@@ -9,11 +9,11 @@
 import UIKit
 
 open class CollectionAdapterCellData: NSObject {
-    
-    public var selectCallback: (() -> Void)?
-    
-    open func size() -> CGSize {
-        return CGSize.zero
-    }
-    
+  
+  public var selectCallback: (() -> Void)?
+  
+  open func size() -> CGSize {
+    return CGSize.zero
+  }
+  
 }

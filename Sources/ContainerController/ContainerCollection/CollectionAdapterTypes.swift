@@ -11,4 +11,4 @@ import UIKit
 public typealias CollectionAdapterCountCallback = () -> Int
 public typealias CollectionAdapterCellIndexCallback = (_ index: Int) -> UICollectionViewCell
 public typealias CollectionAdapterSizeIndexCallback = (_ index: Int) -> CGSize
-public typealias CollectionAdapterSelectIndexCallback = (_ index: Int) -> ()
+public typealias CollectionAdapterSelectIndexCallback = (_ index: Int) -> Void

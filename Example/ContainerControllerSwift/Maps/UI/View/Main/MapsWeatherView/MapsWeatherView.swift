@@ -9,38 +9,44 @@
 import UIKit
 
 class MapsWeatherView: XibView {
-    
-    // MARK: - IBOutlets
-    
-    @IBOutlet weak var mainView: DesignView!
-    var visualEffectView: UIVisualEffectView?
-    @IBOutlet weak var textLabel: UILabel!
-    
-    override func loadedFromNib() {
-        backgroundColor = .clear
-        mainView.fillColor = .clear
+
+  // MARK: - IBOutlets
+
+  @IBOutlet weak var mainView: DesignView!
+  var visualEffectView: UIVisualEffectView?
+  @IBOutlet weak var textLabel: UILabel!
+
+  override func loadedFromNib() {
+    backgroundColor = .clear
+    mainView.fillColor = .clear
+  }
+
+  public func addBlur(darkStyle: Bool) {
+    var style: UIBlurEffect.Style
+    if #available(iOS 13.0, *) {
+      style = darkStyle ? .systemThinMaterialDark : .systemChromeMaterialLight
+    } else {
+      // Fallback on earlier versions
+      style = darkStyle ? .dark : .extraLight
     }
-    
-    public func addBlur(darkStyle: Bool) {
-        let style: UIBlurEffect.Style = darkStyle ? .systemThinMaterialDark : .systemChromeMaterialLight
-        
-        textLabel.textColor = darkStyle ? .white : .black
-        
-        mainView.fillColor = .clear
-        
-        if visualEffectView == nil {
-            let blurView = UIVisualEffectView(effect: UIBlurEffect(style: style))
-            mainView.insertSubview(blurView, at: 0)
-            visualEffectView = blurView
-        }
-        
-        visualEffectView?.effect = UIBlurEffect(style: style)
-        visualEffectView?.bounds = bounds
-        visualEffectView?.x = 0
-        visualEffectView?.y = 0
-        visualEffectView?.layer.cornerRadius = 6.0
-        visualEffectView?.layer.masksToBounds = true
-        visualEffectView?.autoresizingMask = [.flexibleLeftMargin, .flexibleWidth, .flexibleRightMargin, .flexibleTopMargin, .flexibleHeight, .flexibleBottomMargin]
+
+    textLabel.textColor = darkStyle ? .white : .black
+
+    mainView.fillColor = .clear
+
+    if visualEffectView == nil {
+      let blurView = UIVisualEffectView(effect: UIBlurEffect(style: style))
+      mainView.insertSubview(blurView, at: 0)
+      visualEffectView = blurView
     }
-    
+
+    visualEffectView?.effect = UIBlurEffect(style: style)
+    visualEffectView?.bounds = bounds
+    visualEffectView?.x = 0
+    visualEffectView?.y = 0
+    visualEffectView?.layer.cornerRadius = 6.0
+    visualEffectView?.layer.masksToBounds = true
+    visualEffectView?.autoresizingMask = [.flexibleLeftMargin, .flexibleWidth, .flexibleRightMargin, .flexibleTopMargin, .flexibleHeight, .flexibleBottomMargin]
+  }
+
 }

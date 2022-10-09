@@ -77,7 +77,6 @@
 		46ACF0982490F52600FAAD43 /* MenuContainerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ACF04F2490F52600FAAD43 /* MenuContainerController.swift */; };
 		46ACF0992490F52600FAAD43 /* MapViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ACF0512490F52600FAAD43 /* MapViewManager.swift */; };
 		46ACF09A2490F52600FAAD43 /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ACF0522490F52600FAAD43 /* MapsViewController.swift */; };
-		46ACF09E2490FE2700FAAD43 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ACF09D2490FE2700FAAD43 /* SceneDelegate.swift */; };
 		46ACF0C22490FEB300FAAD43 /* ExampleCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ACF0A32490FEB200FAAD43 /* ExampleCollectionCell.swift */; };
 		46ACF0C32490FEB300FAAD43 /* ExampleCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46ACF0A42490FEB200FAAD43 /* ExampleCollectionCell.xib */; };
 		46ACF0C42490FEB300FAAD43 /* ExampleCellStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ACF0A62490FEB200FAAD43 /* ExampleCellStyle.swift */; };
@@ -115,7 +114,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		01C7EF19A8C89AA4D02D74D2 /* Pods-ContainerControllerSwift_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContainerControllerSwift_Tests.debug.xcconfig"; path = "Target Support Files/Pods-ContainerControllerSwift_Tests/Pods-ContainerControllerSwift_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		0AA8BF39B9F182FE833C0178 /* Pods-ContainerControllerSwift_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContainerControllerSwift_Example.debug.xcconfig"; path = "Target Support Files/Pods-ContainerControllerSwift_Example/Pods-ContainerControllerSwift_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		1034FE614CC8890CE063531F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		121FB933CAE3EC5A2A00F4B2 /* Pods_ContainerControllerSwift_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ContainerControllerSwift_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -228,9 +226,7 @@
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		84550121AB9630F101ECE515 /* Pods-ContainerControllerSwift_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContainerControllerSwift_Example.release.xcconfig"; path = "Target Support Files/Pods-ContainerControllerSwift_Example/Pods-ContainerControllerSwift_Example.release.xcconfig"; sourceTree = "<group>"; };
-		95BE06AF27887E1C134436AD /* ContainerControllerSwift.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ContainerControllerSwift.podspec; path = ../ContainerControllerSwift.podspec; sourceTree = "<group>"; };
-		D8903A29B31F63B5A7A8607B /* Pods_ContainerControllerSwift_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ContainerControllerSwift_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DF5E269035BE15FBD5F947F3 /* Pods-ContainerControllerSwift_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContainerControllerSwift_Tests.release.xcconfig"; path = "Target Support Files/Pods-ContainerControllerSwift_Tests/Pods-ContainerControllerSwift_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		95BE06AF27887E1C134436AD /* ContainerControllerSwift.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ContainerControllerSwift.podspec; path = ../ContainerControllerSwift.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		E0FB46D7C5BC0F8759A83A60 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -251,8 +247,6 @@
 			children = (
 				0AA8BF39B9F182FE833C0178 /* Pods-ContainerControllerSwift_Example.debug.xcconfig */,
 				84550121AB9630F101ECE515 /* Pods-ContainerControllerSwift_Example.release.xcconfig */,
-				01C7EF19A8C89AA4D02D74D2 /* Pods-ContainerControllerSwift_Tests.debug.xcconfig */,
-				DF5E269035BE15FBD5F947F3 /* Pods-ContainerControllerSwift_Tests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -923,7 +917,6 @@
 			isa = PBXGroup;
 			children = (
 				121FB933CAE3EC5A2A00F4B2 /* Pods_ContainerControllerSwift_Example.framework */,
-				D8903A29B31F63B5A7A8607B /* Pods_ContainerControllerSwift_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -957,12 +950,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 1150;
+				LastUpgradeCheck = 1400;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = Y7546NLJW9;
+						DevelopmentTeam = 3F72TQQSG5;
 						LastSwiftMigration = 0900;
 					};
 				};
@@ -1132,7 +1125,6 @@
 				46ACF0712490F52600FAAD43 /* LocationCollectionsButtonCell.swift in Sources */,
 				46ACF0622490F52600FAAD43 /* MapsFavoritesCell.swift in Sources */,
 				46ACF0CC2490FEB300FAAD43 /* ExampleSliderCell.swift in Sources */,
-				46ACF09E2490FE2700FAAD43 /* SceneDelegate.swift in Sources */,
 				46ACF0C62490FEB300FAAD43 /* ExampleSegmentCell.swift in Sources */,
 				46ACF0D12490FEB300FAAD43 /* ExampleHeaderGripView.swift in Sources */,
 				46ACF0CE2490FEB300FAAD43 /* ExampleFooterButtonView.swift in Sources */,
@@ -1214,6 +1206,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1271,6 +1264,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1303,11 +1297,12 @@
 			baseConfigurationReference = 0AA8BF39B9F182FE833C0178 /* Pods-ContainerControllerSwift_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = Y7546NLJW9;
+				DEVELOPMENT_TEAM = 3F72TQQSG5;
 				INFOPLIST_FILE = ContainerControllerSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = mrustaa.ContainerController;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gch.ContainerController;
 				PRODUCT_NAME = ContainerController;
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 5.0;
@@ -1319,11 +1314,12 @@
 			baseConfigurationReference = 84550121AB9630F101ECE515 /* Pods-ContainerControllerSwift_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = Y7546NLJW9;
+				DEVELOPMENT_TEAM = 3F72TQQSG5;
 				INFOPLIST_FILE = ContainerControllerSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = mrustaa.ContainerController;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gch.ContainerController;
 				PRODUCT_NAME = ContainerController;
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 5.0;

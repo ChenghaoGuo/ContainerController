@@ -9,13 +9,13 @@
 import UIKit
 
 open class TableAdapterCellData: NSObject {
-    
-    open func cellHeight() -> CGFloat {
-        return UITableView.automaticDimension
-    }
-    
-    open func canEditing() -> Bool {
-        return false
-    }
-    
+  
+  open func cellHeight() -> CGFloat {
+    return UITableView.automaticDimension
+  }
+  
+  open func canEditing() -> Bool {
+    return false
+  }
+  
 }

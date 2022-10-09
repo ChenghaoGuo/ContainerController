@@ -11,6 +11,6 @@ import UIKit
 public typealias TableAdapterCountCallback = () -> Int
 public typealias TableAdapterCellIndexCallback = (_ index: Int) -> UITableViewCell
 public typealias TableAdapterHeightIndexCallback = (_ index: Int) -> CGFloat
-public typealias TableAdapterSelectIndexCallback = (_ index: Int) -> ()
-public typealias TableAdapterDidScrollCallback = () -> ()
-public typealias TableAdapterDeleteIndexCallback = (_ index: Int) -> ()
+public typealias TableAdapterSelectIndexCallback = (_ index: Int) -> Void
+public typealias TableAdapterDidScrollCallback = () -> Void
+public typealias TableAdapterDeleteIndexCallback = (_ index: Int) -> Void
