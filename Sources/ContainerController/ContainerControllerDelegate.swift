@@ -8,7 +8,7 @@
 
 import UIKit
 
-public protocol ContainerControllerDelegate {
+public protocol ContainerControllerDelegate: AnyObject {
   
   /// Reports rotation and orientation changes
   func containerControllerRotation(_ containerController: ContainerController)

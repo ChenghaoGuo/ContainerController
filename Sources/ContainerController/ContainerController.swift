@@ -16,7 +16,7 @@ open class ContainerController: NSObject {
 
   public var shadowButton: UIButton!
 
-  public var controller: UIViewController?
+  public weak var controller: UIViewController?
 
   public var scrollView: UIScrollView?
 
@@ -30,7 +30,7 @@ open class ContainerController: NSObject {
 
   // MARK: Delegate
 
-  public var delegate: ContainerControllerDelegate?
+  public weak var delegate: ContainerControllerDelegate?
 
   // MARK: Current Move Type
 
